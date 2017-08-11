@@ -79,17 +79,17 @@ app.get('/', function (req, res) {
 
 //counter page
 
-//var counter = 0;
-//app.get('/counter', function(req, res) {
+var counter = 0;
+app.get('/counter', function(req, res) {
     counter = counter + 1;
     res.send(counter.toString());
 });
 
 //submit names page
 
-//var names = [];
+var names = [];
 
-//app.get('/submit-name', function (req, res){ // URL: /submit-name?name=dddd
+app.get('/submit-name', function (req, res){ // URL: /submit-name?name=dddd
     // Get the name from the request object
     var name = req.query.name; 
     
