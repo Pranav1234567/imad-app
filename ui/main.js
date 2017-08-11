@@ -29,8 +29,8 @@ var name = nameInput.value;
 var submit = document.getElementById('submit-btn');
 submit.onclick = function () {
     // Make the request
-    request.open('GET','http://pnpiano.imad.hasura-app.io/submit-name', true);
-    request.send(null);
+   // request.open('GET','http://pnpiano.imad.hasura-app.io/submit-name', true);
+//    request.send(null);
     
     // Capture list of names and render it as a list
     var names = ['name1', 'name2', 'name3', 'name4'];
