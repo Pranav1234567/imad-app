@@ -49,7 +49,7 @@ submit.onclick = function () {
     };
     
     // Make the request
-    request.open('GET','http://pnpiano.imad.hasura-app.io/submit-name', true);
+    request.open('GET','http://pnpiano.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
 };
 
