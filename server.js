@@ -86,7 +86,7 @@ app.get('/counter', function(req, res) {
 });
 
 //submit names page
-```
+/*
 var names = [];
 
 app.get('/submit-name/', function (req, res){ // URL: /submit-name?name=dddd
@@ -97,7 +97,7 @@ app.get('/submit-name/', function (req, res){ // URL: /submit-name?name=dddd
     // JSON: Javascript Object Notation
     res.send(JSON.stringify(names));
 });
-```
+*/
 
 app.get('/:articleName', function (req, res) {
      // articleName == article-one
