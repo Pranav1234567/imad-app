@@ -16,6 +16,10 @@ button.onclick = function () {
                 span.innerHTML = counter.toString();
             }
         }
-    }
+    };
+  
+  //Make request 
+  request.open('GET','http://pnpiano.imad.hasura-app.io/counter', true);
+  request.send(null);
     
-}
+};
