@@ -24,7 +24,8 @@ button.onclick = function () {
 
 // Submit Name page code
 var submit = document.getElementById('submit-btn');
-
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
 
 submit.onclick = function () {
     // Make the request
@@ -47,9 +48,6 @@ submit.onclick = function () {
         }
         // Not done yet
     };
-    
-    var nameInput = document.getElementById('name');
-    var name = nameInput.value;
     
     // Make the request
     request.open('GET','http://pnpiano.imad.hasura-app.io/submit-name?name=' + name, true);
