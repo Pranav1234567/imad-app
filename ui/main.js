@@ -21,5 +21,7 @@ button.onclick = function () {
     // Make the request
     request.open('GET','http://pnpiano.imad.hasura-app.io/counter', true);
     request.send(null);
-    
 };
+
+// Names page code
+
